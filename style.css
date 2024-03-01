@@ -1,0 +1,32 @@
+/* static/style.css */
+
+body {
+    background-image: url('pink.jpg'); /* Replace 'background.jpg' with your actual background image file */
+    background-size: cover;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    color: lightgrey;
+    margin: 0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.75); /* 75% transparency white background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+label, input, button {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    color: lightgrey;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, p {
+    font-size: 24px;
+    color: grey;
+}

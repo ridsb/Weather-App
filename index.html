@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+</head>
+    <style>
+        body {
+            background-image: url('/static/pink.jpg');
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: magenta;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.65);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 50%; 
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.65);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h2 {
+            font-size: 38px;
+            color: rgb(50, 50, 50);
+            margin: 20px auto;
+            font-weight: bold;
+            width: 50%; 
+            text-align: center;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+        }
+        h1{
+            color: black;
+            font-weight: bold;
+            font-size: 38px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+        }
+        p {
+            margin: 20px auto;
+            width: 50%; 
+            color: rgb(17, 17, 17);
+            text-align: center;
+        }
+        .weather-info {
+            background-color: rgba(255, 255, 255, 0.65); /* 65% transparency */
+            padding: 2px;
+            border-radius: 6px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            width:300px;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Weather App</h1>
+    <form method="POST">
+        <label for="cityName">City:</label>
+        <input type="text" name="cityName" required><br>
+        <label for="stateCode">State:</label>
+        <input type="text" name="stateCode" required><br>
+        <label for="countryName">Country:</label>
+        <input type="text" name="countryName" required><br>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    {% if data %}
+
+        <h2>Weather Information</h2>
+        <div class="weather-info">
+        <p>Main: {{ data.main }}</p>
+        <p>Description: {{ data.description }}</p>
+        <p>Icon: {{ data.icon }}</p>
+        <p>Temperature: {{ data.temperature }}°C</p>
+    </div>
+    {% endif %}
+</body>
+</html>
