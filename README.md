@@ -1,6 +1,6 @@
 ## Overview
 
-The Weather App is a simple web application built with Flask that provides real-time weather information based on user input (city, state, country). It leverages the OpenWeatherMap API to retrieve weather data and presents it in a user-friendly interface.
+The Weather App is a versatile web application designed to provide users with up-to-date weather information based on their input (city, state, country). Developed using Flask, this application seamlessly integrates with the OpenWeatherMap API to offer a feature-rich and responsive weather forecasting experience.
 
 ![1](https://github.com/ridsb/Weather-App/assets/108459805/4bd3390f-cb71-41a2-b53d-594a35f9bacf)
 
