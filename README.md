@@ -23,7 +23,7 @@ The Weather App is a versatile web application designed to provide users with up
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git https://github.com/ridsb/Weather-App.git
 2. Navigate to the project directory:
 cd weather-app
 
